@@ -1,0 +1,22 @@
+.heroImgContainer  {
+    display: flex;
+    width: 100%;
+    justify-self: center;
+}
+
+.backgrounds {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    transition: all 1s;
+}
+
+#firstHeroImg {
+    background-image: url(./heroImages/tempImg.webp);
+    background-position: left center;
+}
+
+#secondHeroImg {
+    background-image: url(./heroImages/tempImg2.jpeg);
+    background-color: right center;
+}

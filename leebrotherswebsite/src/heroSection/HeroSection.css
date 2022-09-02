@@ -1,0 +1,6 @@
+.heroSectionContainer {
+    width: 80%;
+    height: 40rem;
+    display: flex;
+    margin: 0 10% 10% 10rem;
+}
