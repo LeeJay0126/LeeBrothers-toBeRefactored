@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './HeroImage.css';
 
-const HeroImage = () => {
+const HeroImage = (props) => {
 
     const [hoveredImage, expandingHeroHandler] = useState();
 
@@ -27,6 +27,7 @@ const HeroImage = () => {
         }
 
         expandingHeroHandler(event.target.id);
+        props.brotherPicker(hoveredImage);
     };
 
     const brotherNavigator = () => {
