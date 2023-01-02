@@ -7,15 +7,15 @@ const HeroSection = () => {
 
     const [brotherPickerProtocol, brotherPickerSave] = useState(0);
 
-    const brotherPicker = (props) => {
+    // const brotherPicker = (props) => {
         
-        brotherPickerSave(props);
-        return brotherPickerProtocol;
-    };
+    //     brotherPickerSave(props);
+    //     return brotherPickerProtocol;
+    // };
 
     return (
         <div className="heroSectionContainer">
-            <HeroImage onBrotherPicker={brotherPicker}></HeroImage>
+            <HeroImage onBrotherPicker={brotherPickerSave}></HeroImage>
             <HeroBottom number={brotherPickerProtocol}></HeroBottom>
         </div>
     );

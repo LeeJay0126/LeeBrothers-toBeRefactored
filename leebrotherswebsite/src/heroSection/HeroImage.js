@@ -12,22 +12,22 @@ const HeroImage = (props) => {
             document.getElementById("secondHeroImg").style.width="50%";
             document.getElementById("firstHeroImg").style.backgroundPosition = "left center";
             document.getElementById("secondHeroImg").style.backgroundPosition = "right center";
-        }
+        };
 
         if(number === 1){
             document.getElementById("firstHeroImg").style.width = "100%";
             document.getElementById("secondHeroImg").style.width="0%";
             document.getElementById("firstHeroImg").style.backgroundPosition = "center";
-        }
+        };
 
         if(number === 2){
             document.getElementById("firstHeroImg").style.width = "0%";
             document.getElementById("secondHeroImg").style.width="100%";
             document.getElementById("secondHeroImg").style.backgroundPosition = "center";
-        }
+        };
 
         expandingHeroHandler(event.target.id);
-        props.brotherPicker(hoveredImage);
+        props.onBrotherPicker(hoveredImage);
     };
 
     const brotherNavigator = () => {
